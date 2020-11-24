@@ -2,6 +2,7 @@
 
 
 **Validation errors** implemented through multiexception (collection of exceptions).
+
 **Validation rules** - static variable in Form class.
 
 In index.php you can try to uncomment other Form. 
