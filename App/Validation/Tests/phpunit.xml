@@ -1,0 +1,13 @@
+<phpunit
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="/vendor/phpunit/phpunit/phpunit.xsd"
+        bootstrap="autoload.php"
+>
+
+    <testsuites>
+        <testsuite name="Validation">
+            <directory phpVersionOperator=">=" phpVersion="7.4">Validation</directory>
+        </testsuite>
+    </testsuites>
+
+</phpunit>
