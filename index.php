@@ -7,7 +7,8 @@ $form = new RegistrationForm();
 //$form = new NameAgeForm();
 
 if (!empty($_POST)) {
-    $form->validate($_POST);
+    $validator = ValidatorFactory::makeValidator($form->getValidationRules());
+    $validator->validate($_POST);
 }
 
 require $form->getTemplate();

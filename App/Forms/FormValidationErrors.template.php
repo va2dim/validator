@@ -1,7 +1,8 @@
 <?php
 
-    $validationErrors = $form->getValidationErrors();
-    if (isset($validationErrors)) {
+/** @var \App\Validation\Validator $validator **/
+    if (isset($validator)) {
+        $validationErrors = $validator->getValidationErrors();
         foreach ($validationErrors->getMessages() as $msg) {
             echo $msg .'<br>';
         }
